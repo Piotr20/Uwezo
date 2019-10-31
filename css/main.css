@@ -316,7 +316,7 @@ body {
      height: 100vh;
      background-color: #323442;
      display: grid;
-     grid-template-rows: 75% 5% 5% 15%;
+     grid-template-rows: 65% 10% 5% 5% 15%;
      opacity: 0;
 }
 
@@ -340,6 +340,7 @@ body {
      grid-row: 1/2;
      justify-self: center;
      align-self: center;
+     grid-column: 1/2;
 }
 
 .globe {
@@ -349,11 +350,10 @@ body {
      background-size: 390%;
      background-repeat: repeat-x;
      border-radius: 100%;
-     background-color: rgb(19, 38, 99);
-     box-shadow: 13px -5px 20px 2px rgba(0, 0, 0, 0.75);
+     background-color: rgb(8, 19, 54);
+     box-shadow: 13px -5px 20px 2px rgba(9, 21, 61, 0.445);
      animation: globerotation 40s 2s linear forwards;
      position: relative;
-
 }
 
 @keyframes globerotation {
@@ -400,18 +400,44 @@ body {
 
 }
 
+.world h1,
+.world h2 {
+     font-family: Source Code Pro;
+     font-weight: 600;
+     color: #f6f4f0;
+     grid-column: 1/2;
+}
+
+.world h2 {
+     grid-row: 4/5;
+
+}
+
+.world h1 {
+     grid-row: 3/4;
+     align-self: center;
+}
+
+.world p {
+     font-family: ff-basic-gothic-pro, sans-serif;
+     font-weight: 500;
+     grid-row: 5/6;
+     color: #f6f4f0;
+     grid-column: 1/2;
+}
+
 @media screen and (min-width:900px) {
 
      .world {
           display: grid;
-          grid-template-rows: 35% 5% 60%;
+          grid-template-rows: 35% 10% 5% 50%;
           grid-template-columns: 60% 30%;
      }
 
      .globe-area {
           width: 700px;
           height: 700px;
-          grid-row: 1/4;
+          grid-row: 1/5;
           grid-column: 1/2;
           justify-self: center;
           align-self: center;
@@ -426,15 +452,32 @@ body {
 
      }
 
-}
+     .world p {
+          font-family: ff-basic-gothic-pro, sans-serif;
+          font-weight: 500;
+          grid-row: 4/5;
+          color: #f6f4f0;
+          grid-column: 2/3;
+     }
 
-.world p {
-     font-family: ff-basic-gothic-pro, sans-serif;
-     font-weight: 500;
-}
+     .world h1,
+     .world h2 {
+          font-family: Source Code Pro;
+          font-weight: 600;
+          color: #f6f4f0;
+          grid-column: 3/4;
+          align-self: center;
+     }
 
-.world h1,
-.wordl h2 {
-     font-family: Source Code Pro;
-     font-weight: 600;
+     .world h2 {
+          grid-row: 3/4;
+          grid-column: 2/3;
+     }
+
+     .world h1 {
+          grid-row: 1/2;
+          align-self: center;
+          grid-column: 2/3;
+     }
+
 }
