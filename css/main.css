@@ -22,20 +22,14 @@ body {
 @keyframes banner1 {
      0% {
           background: url('../images/Boy_mobile500.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
      }
 
      50% {
           background: url('../images/lions500.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
      }
 
      100% {
           background: url('../images/giraffe500.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
      }
 }
 
@@ -47,20 +41,17 @@ body {
      @keyframes banner2 {
           0% {
                background: url('../images/Boy_mobile900.jpg');
-               background-repeat: no-repeat;
-               background-size: cover;
+
           }
 
           50% {
                background: url('../images/lions900.jpg');
-               background-repeat: no-repeat;
-               background-size: cover;
+
           }
 
           100% {
                background: url('../images/giraffe900.jpg');
-               background-repeat: no-repeat;
-               background-size: cover;
+
           }
      }
 }
