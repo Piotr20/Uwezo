@@ -317,7 +317,6 @@ body {
      background-color: #323442;
      display: grid;
      grid-template-rows: 65% 10% 5% 5% 15%;
-     opacity: 0;
 }
 
 .active {
