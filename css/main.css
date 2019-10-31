@@ -13,7 +13,7 @@ body {
      background: url('../images/Boy_mobile500.jpg');
      width: 100%;
      height: 100%;
-     animation: banner1 15s infinite alternate;
+     animation: banner1 15s infinite alternate both;
      background-size: cover;
      background-repeat: no-repeat;
      background-position: 50% 50%;
