@@ -13,7 +13,7 @@ body {
      background: url('../images/Boy_mobile500.jpg');
      width: 100%;
      height: 100%;
-     animation: banner1 15s infinite alternate both;
+     animation: banner1 15s infinite alternate;
      background-size: cover;
      background-repeat: no-repeat;
      background-position: 50% 50%;
@@ -307,11 +307,12 @@ body {
      height: 100vh;
      background-color: #323442;
      display: grid;
-     grid-template-rows: 65% 10% 5% 5% 15%;
+     grid-template-rows: 55% 20% 5% 5% 15%;
+     opacity: 0;
 }
 
 .active {
-     animation: grow 2s 0.5s ease forwards;
+     animation: grow 1s 0.3s ease forwards;
 }
 
 @keyframes grow {
@@ -331,6 +332,7 @@ body {
      justify-self: center;
      align-self: center;
      grid-column: 1/2;
+     position: relative;
 }
 
 .globe {
@@ -341,8 +343,8 @@ body {
      background-repeat: repeat-x;
      border-radius: 100%;
      background-color: rgb(8, 19, 54);
-     box-shadow: 13px -5px 20px 2px rgba(9, 21, 61, 0.445);
-     animation: globerotation 40s 2s linear forwards;
+     box-shadow: 18px 5px 20px 8px rgba(8, 19, 54, 0.545);
+     animation: globerotation 20s linear forwards;
      position: relative;
 }
 
@@ -400,12 +402,17 @@ body {
 
 .world h2 {
      grid-row: 4/5;
+     font-size: 1.4em;
+     text-align: center;
+     align-self: flex-end;
 
 }
 
 .world h1 {
      grid-row: 3/4;
-     align-self: center;
+     align-self: flex-start;
+     text-align: center;
+     font-size: 1.5em;
 }
 
 .world p {
@@ -414,15 +421,22 @@ body {
      grid-row: 5/6;
      color: #f6f4f0;
      grid-column: 1/2;
+     align-self: center;
+     font-size: 0.95em;
+     text-align: center;
 }
+
+
 
 @media screen and (min-width:900px) {
 
      .world {
           display: grid;
-          grid-template-rows: 35% 10% 5% 50%;
+          grid-template-rows: 30% 25% 5% 40%;
           grid-template-columns: 60% 30%;
      }
+
+
 
      .globe-area {
           width: 700px;
@@ -442,12 +456,16 @@ body {
 
      }
 
+
      .world p {
           font-family: ff-basic-gothic-pro, sans-serif;
           font-weight: 500;
           grid-row: 4/5;
           color: #f6f4f0;
           grid-column: 2/3;
+          align-self: flex-start;
+          padding-top: 25px;
+          line-height: 20px;
      }
 
      .world h1,
@@ -462,12 +480,219 @@ body {
      .world h2 {
           grid-row: 3/4;
           grid-column: 2/3;
+          align-self: flex-start;
+          font-size: 1.6em;
      }
 
      .world h1 {
           grid-row: 1/2;
           align-self: center;
           grid-column: 2/3;
+          font-size: 2em;
      }
 
+}
+
+.globe-area i {
+     color: #702f21;
+     position: absolute;
+     font-size: 10vw;
+     top: 200px;
+     left: 300px;
+     cursor: pointer;
+     opacity: 0;
+     animation: location 0.9s 20.2s forwards;
+     transform: scale(0.2);
+}
+
+.globe-area i:nth-of-type(1) {
+     top: 183px;
+     left: 160px;
+}
+
+.globe-area i:nth-of-type(2) {
+     top: 275px;
+     left: 200px;
+}
+
+.globe-area i:nth-of-type(3) {
+     top: 170px;
+     left: 235px;
+}
+
+@keyframes location {
+     0% {
+          opacity: 0;
+          transform: scale(0.2);
+     }
+
+     100% {
+          opacity: 1;
+          transform: scale(1);
+     }
+}
+
+@media screen and (min-width:450px) {
+
+
+     .globe-area i:nth-of-type(1) {
+          top: 350px;
+          left: 267px;
+     }
+
+     .globe-area i:nth-of-type(2) {
+          top: 240px;
+          left: 205px;
+     }
+
+     .globe-area i:nth-of-type(3) {
+          top: 220px;
+          left: 320px;
+     }
+}
+
+@media screen and (min-width:600px) {
+     .globe-area i {
+          font-size: 7vw;
+     }
+
+     .globe-area i:nth-of-type(1) {
+          top: 383px;
+          left: 300px;
+     }
+
+     .globe-area i:nth-of-type(2) {
+          top: 265px;
+          left: 220px;
+     }
+
+     .globe-area i:nth-of-type(3) {
+          top: 240px;
+          left: 350px;
+     }
+}
+
+@media screen and (min-width:900px) {
+
+
+     .globe-area i:nth-of-type(1) {
+          top: 510px;
+          left: 407px;
+     }
+
+     .globe-area i:nth-of-type(2) {
+          top: 380px;
+          left: 325px;
+     }
+
+     .globe-area i:nth-of-type(3) {
+          top: 340px;
+          left: 475px;
+     }
+}
+
+@media screen and (min-width:900px) {
+     .globe-area i {
+          font-size: 3vw;
+     }
+
+
+}
+
+
+
+.johanesburg {
+     opacity: 0;
+}
+
+.luanda {
+     opacity: 0;
+}
+
+.nairobi {
+     opacity: 0;
+}
+
+h2.johanesburg {
+
+     color: rgb(144, 224, 63);
+}
+
+h2.luanda {
+
+     color: #eeeb58;
+}
+
+h2.nairobi {
+
+     color: #fa7254
+}
+
+
+
+.world div.johanesburg {
+     grid-column: 1/2;
+     grid-row: 2/3;
+     background-image: url(../images/johanesburg.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 95%;
+     width: 80%;
+     justify-self: center;
+     align-self: flex-start;
+     box-shadow: 0px 0px 18px 7px rgba(0, 0, 0, 0.75);
+}
+
+.world div.luanda {
+     background-image: url(../images/luanda.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     grid-column: 1/2;
+     grid-row: 2/3;
+     height: 95%;
+     width: 80%;
+     justify-self: center;
+     align-self: flex-start;
+     box-shadow: 0px 0px 18px 7px rgba(0, 0, 0, 0.75);
+}
+
+.world div.nairobi {
+     grid-column: 1/2;
+     grid-row: 2/3;
+     background-image: url(../images/nairobi.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 95%;
+     width: 80%;
+     justify-self: center;
+     align-self: flex-start;
+     box-shadow: 0px 0px 18px 7px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (min-width:900px) {
+     .world div.johanesburg {
+
+          grid-column: 2/3;
+
+     }
+
+     .world div.luanda {
+
+          grid-column: 2/3;
+
+     }
+
+     .world div.nairobi {
+
+          grid-column: 2/3;
+
+     }
+}
+
+.visible {
+     opacity: 1;
+     transition: all 1.5s ease;
 }
