@@ -5,7 +5,7 @@ function updateScroll() {
      console.log(a);
 
      const globe = document.querySelector('.world');
-     if (a > 400) {
+     if (a > 500) {
           globe.classList.add('active');
      }
      return a;
