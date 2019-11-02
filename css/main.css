@@ -780,3 +780,108 @@ h2.nairobi {
      opacity: 1;
      transition: all 1.5s ease;
 }
+
+.people {
+     width: 100%;
+     height: 150vh;
+     /* background-color: #5f3b34; */
+     display: grid;
+     grid-template-rows: 1fr 1fr 1fr;
+}
+
+.people div {
+     display: grid;
+     grid-template-rows: 60% 10% 30%;
+     width: 80%;
+     height: 90%;
+     justify-self: center;
+     align-self: center;
+}
+
+.people div p,
+.people div h3 {
+     color: rgb(0, 0, 0);
+}
+
+.people div p {
+     font-size: 0.9em;
+     align-self: center;
+}
+
+.people div h3 {
+     align-self: flex-end;
+     font-size: 1.3em;
+}
+
+.people div.musk span {
+     background: url(../images/Elon\ Musk.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+
+.people div.mandela span {
+     background: url(../images/Mandela.webp);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+
+.people div.salah span {
+     background: url(../images/salah.webp);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+
+@media screen and (min-width:780px) {
+     .people div {
+          width: 42%;
+          grid-template-rows: 30% 70%;
+          grid-template-columns: 60% 40%;
+          justify-self: center;
+          align-self: center;
+     }
+
+     .people div span {
+          grid-row: 1/3;
+          grid-column: 1/2;
+     }
+
+     .people div.musk span {
+          background-size: contain;
+     }
+
+     .people div.mandela span {
+          grid-column: 2/3;
+          background-size: contain;
+     }
+
+     .people div.salah span {
+          width: 97%;
+     }
+
+
+     .people div:nth-child(1) {
+          justify-self: left;
+     }
+
+     .people div:nth-child(2) {
+          justify-self: right;
+          grid-template-columns: 40% 60%;
+     }
+
+     .people div:nth-child(2) img {
+          grid-row: 1/3;
+          grid-column: 2/3;
+     }
+
+     .people div:nth-child(3) {
+          justify-self: left;
+     }
+
+     .people div:nth-child(3) img {
+          grid-row: span 2;
+          grid-column: 1/2;
+     }
+}
