@@ -484,7 +484,7 @@ div.pic3 {
 
 .world h2 {
      grid-row: 4/5;
-     font-size: 1.4em;
+     font-size: 1em;
      text-align: center;
      align-self: flex-end;
 
@@ -494,7 +494,7 @@ div.pic3 {
      grid-row: 3/4;
      align-self: flex-start;
      text-align: center;
-     font-size: 1.5em;
+     font-size: 1.2em;
 }
 
 .world p {
@@ -504,7 +504,7 @@ div.pic3 {
      color: #f6f4f0;
      grid-column: 1/2;
      align-self: center;
-     font-size: 0.85em;
+     font-size: 0.65em;
      text-align: center;
 }
 
@@ -578,7 +578,7 @@ div.pic3 {
 .globe-area i {
      color: #702f21;
      position: absolute;
-     font-size: 10vw;
+     font-size: 8vw;
      top: 200px;
      left: 300px;
      cursor: pointer;
@@ -588,13 +588,13 @@ div.pic3 {
 }
 
 .globe-area i:nth-of-type(1) {
-     top: 183px;
-     left: 160px;
+     top: 275px;
+     left: 200px;
 }
 
 .globe-area i:nth-of-type(2) {
-     top: 275px;
-     left: 200px;
+     top: 183px;
+     left: 160px;
 }
 
 .globe-area i:nth-of-type(3) {
@@ -615,7 +615,9 @@ div.pic3 {
 }
 
 @media screen and (min-width:450px) {
-
+     .globe-area i {
+          font-size: 7vw;
+     }
 
      .globe-area i:nth-of-type(1) {
           top: 350px;
@@ -635,7 +637,7 @@ div.pic3 {
 
 @media screen and (min-width:600px) {
      .globe-area i {
-          font-size: 7vw;
+          font-size: 6vw;
      }
 
      .globe-area i:nth-of-type(1) {
