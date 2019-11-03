@@ -23,7 +23,7 @@ function colorChange() {
      let nav3 = document.querySelector('nav a:nth-of-type(3)');
 
 
-     if (b > 999 && b < 1900) {
+     if (b > 999 && b < 2000) {
           nav1.style.color = "white";
           nav2.style.color = "white";
           nav3.style.color = "white";

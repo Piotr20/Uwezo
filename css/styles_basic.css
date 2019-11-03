@@ -251,4 +251,56 @@ footer {
      width: 100%;
      height: 50vh;
      background-color: #323442;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+
+}
+
+footer div {
+     height: 70%;
+     width: 80%;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: flex-start;
+}
+
+footer a,
+footer p {
+     font-family: ff-basic-gothic-pro, sans-serif;
+     text-decoration: none;
+     color: white;
+
+}
+
+footer a {
+     margin-left: 10px;
+}
+
+footer div.links {
+     display: none;
+}
+
+.media i {
+     font-size: 12px;
+}
+
+@media only screen and (min-width:900px) {
+     footer div.links {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: flex-start;
+     }
+
+     .media i {
+          font-size: 17px;
+     }
+
+     footer div {
+          width: 30%;
+          color: white;
+     }
 }
