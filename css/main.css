@@ -44,16 +44,22 @@ div.pic3 {
 @media screen and (min-width:500px) {
      div.pic1 {
           background-image: url(../images/giraffe900.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
 
      }
 
      div.pic2 {
           background-image: url(../images/Lions900.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
 
      }
 
      div.pic3 {
           background-image: url(../images/Boy_mobile900.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
 
      }
 }
@@ -146,7 +152,7 @@ div.pic3 {
      display: none;
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:1424px) {
      #first {
           height: 94vh;
      }
@@ -829,6 +835,18 @@ h2.nairobi {
      align-self: center;
 }
 
+@media screen and (min-width:360px) {
+     .people div p {
+          font-size: 0.75em;
+     }
+}
+
+@media screen and (min-width:400px) {
+     .people div p {
+          font-size: 0.85em;
+     }
+}
+
 .people div h3 {
      align-self: flex-end;
      font-size: 1.3em;
@@ -920,18 +938,135 @@ article {
      justify-content: space-around;
      border: black double 6px;
      background-repeat: no-repeat;
+     background-image: url(/images/background.jpg);
+     background-position: 36% 30%;
+     background-size: cover;
+
 }
 
 article div {
      height: 30%;
      width: 100%;
-     background-color: rgb(163, 70, 70);
-     opacity: 0.7;
+     opacity: 0.8;
+     transition: 0.7s ease;
+     display: grid;
+     grid-template-rows: 5fr 1fr 4fr;
+     position: relative;
+     background-color: rgba(0, 0, 0, 0.26);
+}
+
+article div:hover {
+     opacity: 1;
+}
+
+article div p {
+     font-family: ff-basic-gothic-pro, sans-serif;
+     color: white;
+     font-size: 0.8em;
+}
+
+article div h3 {
+     color: white;
+}
+
+article div a {
+     width: 60px;
+     height: 18px;
+     line-height: 18px;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     color: white;
+     text-decoration: none;
+     text-align: center;
+     font-size: 16px;
+     border: 2px solid white;
+     transition: 0.4s ease;
+}
+
+article div a:hover {
+     background-color: #fff;
+     color: black;
 }
 
 @media screen and (min-width:780px) {
+     article div a {
+          width: 100px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 25px;
+          right: 20px;
+     }
+
+     article {
+          width: 100%;
+          height: 105vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          border: black double 6px;
+          background-repeat: no-repeat;
+          background-image: url(/images/background.jpg);
+          background-position: center;
+          background-size: cover;
+     }
+
      article div {
           height: 30%;
-          width: 60%;
+          width: 50%;
           align-self: flex-start;
+          opacity: 0.5;
+          grid-template-rows: 2fr 8fr;
+          grid-template-columns: 2fr 3fr;
+
      }
+
+
+
+
+}
+
+
+.article1 span {
+     background-image: url(/images/money.jpg);
+     background-color: #fff;
+     width: 100%;
+     height: 100%;
+     grid-row: span 3;
+     background-position: center;
+}
+
+.article2 span {
+     background-image: url(/images/tourist.jpg);
+     background-color: #fff;
+     width: 100%;
+     height: 100%;
+     grid-row: span 3;
+     background-position: center;
+}
+
+.article3 span {
+     background-image: url(/images/kids.jpg);
+     background-color: #fff;
+     width: 100%;
+     height: 100%;
+     grid-row: span 3;
+     background-position: center;
+}
+
+
+.article1 p {
+     width: 100%;
+     height: 40%;
+     font-family: ff-basic-gothic-pro, sans-serif;
+     font-size: 0.8em;
+}
+
+
+
+@media screen and (min-width:780px) {
+     .article1 span {
+          grid-row: 1/3;
+          grid-column: 1/2;
+     }
+}
