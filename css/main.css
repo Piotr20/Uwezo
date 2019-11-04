@@ -938,7 +938,7 @@ article {
      justify-content: space-around;
      border: black double 6px;
      background-repeat: no-repeat;
-     background-image: url(/images/background.jpg);
+     background-image: url(../images/background.jpg);
      background-position: 36% 30%;
      background-size: cover;
 
@@ -1006,7 +1006,7 @@ article div a:hover {
           justify-content: space-around;
           border: black double 6px;
           background-repeat: no-repeat;
-          background-image: url(/images/background.jpg);
+          background-image: url(../images/background.jpg);
           background-position: center;
           background-size: cover;
      }
@@ -1028,7 +1028,7 @@ article div a:hover {
 
 
 .article1 span {
-     background-image: url(/images/money.jpg);
+     background-image: url(../images/money.jpg);
      background-color: #fff;
      width: 100%;
      height: 100%;
@@ -1037,7 +1037,7 @@ article div a:hover {
 }
 
 .article2 span {
-     background-image: url(/images/tourist.jpg);
+     background-image: url(../images/tourist.jpg);
      background-color: #fff;
      width: 100%;
      height: 100%;
@@ -1046,7 +1046,7 @@ article div a:hover {
 }
 
 .article3 span {
-     background-image: url(/images/kids.jpg);
+     background-image: url(../images/kids.jpg);
      background-color: #fff;
      width: 100%;
      height: 100%;
