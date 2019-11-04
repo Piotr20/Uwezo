@@ -64,14 +64,12 @@ article p:nth-of-type(4) {
      font-family: ff-basic-gothic-pro, sans-serif;
      width: 90%;
      margin: 0 auto;
-     font-size: 20px;
-     line-height: 30px;
-     grid-row: 9/10;
 }
 
 article h3:nth-of-type(2) {
      grid-row: 8/9;
      margin-left: 5%;
+     margin-top: 2%;
 }
 
 
