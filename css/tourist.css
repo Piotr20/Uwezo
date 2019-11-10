@@ -2,8 +2,6 @@ section {
      width: 100%;
      height: 320vh;
      margin-top: 6vh;
-     display: grid;
-     grid-template-rows: 18% 1% 2% 50%;
 }
 
 section span {
@@ -13,6 +11,7 @@ section span {
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center 100%;
+     display: inline-block;
 }
 
 section h1 {
@@ -22,12 +21,13 @@ section h1 {
 section h2 {
      text-align: center;
      font-size: 17px;
-     align-self: center;
+
 }
 
 section article {
      width: 90%;
      margin: 0 auto;
+     margin-top: 5vh;
 }
 
 section article p {
@@ -63,19 +63,42 @@ section article h3 {
 @media screen and (min-width:800px) {
      section {
           width: 100%;
-          height: 300vh;
+          height: 350vh;
           margin-top: 6vh;
-          display: grid;
-          grid-template-rows: 25% 1% 1% 50%;
+
      }
 
      section article {
-          width: 70%;
+          width: 60%;
           margin: 0 auto;
+          margin-top: 8vh;
      }
 
      section span {
           height: 70vh;
+          width: 60%;
+          display: inline-table;
+          float: left;
+     }
+
+     .title {
+          width: 40%;
+          height: 70vh;
+          display: flex;
+          border: 10px double black;
+          flex-direction: column;
+          justify-content: center;
+     }
+
+     .title h1 {
+          padding-bottom: 15px;
+     }
+
+
+     .title p {
+          text-align: right;
+          margin-top: 100px;
+          margin-right: 50px;
      }
 
      section h1 {
@@ -86,7 +109,6 @@ section article h3 {
      section h2 {
           text-align: center;
           font-size: 20px;
-          align-self: center;
      }
 
      section article p {
