@@ -2,8 +2,6 @@ let a = 0;
 
 function updateScroll() {
      a = window.scrollY || window.pageYOffset;
-     console.log(a);
-
      const globe = document.querySelector('.world');
      if (a > 500) {
           globe.classList.add('active');

@@ -2,10 +2,7 @@ p {
      font-family: ff-basic-gothic-pro, sans-serif;
      font-style: normal;
      font-weight: 100;
-}
-
-p {
-     font-family: font61324;
+     scroll-behavior: smooth;
 }
 
 * {

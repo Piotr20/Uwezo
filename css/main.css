@@ -429,7 +429,7 @@ div.pic3 {
      background-size: 390%;
      background-repeat: repeat-x;
      border-radius: 100%;
-     background-color: rgb(8, 19, 54);
+     background-color: rgb(19, 32, 73);
      box-shadow: 18px 5px 20px 8px rgba(8, 19, 54, 0.545);
      animation: globerotation 20s linear forwards;
      position: relative;
@@ -603,7 +603,7 @@ div.pic3 {
      left: 300px;
      cursor: pointer;
      opacity: 0;
-     animation: location 0.9s 20.2s forwards;
+     animation: location 0.9s 20.2s forwards ease-in-out;
      transform: scale(0.2);
 }
 
@@ -697,7 +697,7 @@ div.pic3 {
 
 @media screen and (min-width:900px) {
      .globe-area i {
-          font-size: 3vw;
+          font-size: 2.4vw;
      }
 
 
